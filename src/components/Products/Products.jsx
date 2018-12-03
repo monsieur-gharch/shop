@@ -1,3 +1,4 @@
+//presentational component
 import React , {Component} from 'react';
 //present componenet
 import './Products.css';
@@ -8,11 +9,9 @@ import {store} from '../../store/store';
 class Products extends Component  {
 
 
-
     
     render(){
         return(
-            
             <div className="Cards">
 
 					{store.getState().packages.map((_package,id) => {
@@ -22,18 +21,16 @@ class Products extends Component  {
 								title={_package.title}
 								Price={_package.Price}
 								Description={_package.Description}
-								img={_package.img}
-
-							/>
-                            
-
+								img={_package.img}>
+                            </Product>
 						);
 					})}
 
+                 <button className="checkout">Checkout</button>
+
+
 				</div>
 
-
-             
         );
     }
 }

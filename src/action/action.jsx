@@ -1,9 +1,9 @@
 function ADD_PACKAGE (count) {
+
+
           return {
-            type: 'ADD_ITEM',
-            payload:{
-                count
-            }
+            type: 'ADD_PACKAGE',
+            payload:''
           }
         }
 

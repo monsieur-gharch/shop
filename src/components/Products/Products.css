@@ -3,3 +3,17 @@
     float : left;
     margin-left: 18%;
 }
+
+.checkout{
+
+  margin-left: -5%;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}

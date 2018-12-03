@@ -1,8 +1,9 @@
-export default (state , action) => {
+export default (state =[], action) => {
     
           switch(action.type) {
               case "ADD_PACKAGE":
-                  return;
+                  console.log(state)
+                  return state;
                     
               default:
                   return state;
